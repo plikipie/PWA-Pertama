@@ -1,5 +1,5 @@
 // TODO MENYIPAN ASET KE CACHE
-const CACHE_NAME = "firstpwa-v1";
+const CACHE_NAME = "firstpwa-v5";
 let urlsToCache = [
     "/",
     "/nav.html",
