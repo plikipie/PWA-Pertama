@@ -72,3 +72,4 @@ function loadNav() {
     xhttp.open("GET", "nav.html", true);
     xhttp.send();
 }
+
