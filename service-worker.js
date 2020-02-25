@@ -41,11 +41,11 @@ self.addEventListener("fetch", function(event) {
 // TODO MEGHAPUS CACHE LAMA
 self.addEventListener("activate", function(event) {
     event.waitUntil(
-        caches.keys().then(function(cacheName) {
+        caches.keys().then(function(cacheNames) {
             return Promise.all(
-                cacheName.map(function(cacheName) {
+                cacheNames.map(function(cacheName) {
                     if (cacheName != CACHE_NAME) {
-                        console.log("ServiceWorker: cache" + cacheName + "dihapus");
+                        console.log("ServiceWorker: cache " + cacheName + " dihapus");
                         return caches.delete(cacheName);
                     }
                 })
