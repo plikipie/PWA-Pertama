@@ -29,8 +29,9 @@ self.addEventListener("fetch", function(event) {
                 console.log("ServiceWorker: Gunakan aset dari cache: ", response.url);
                 return response;
             }
+
             console.log(
-                "ServiceWorker: Memuat aset dari server:",
+                "ServiceWorker: Memuat aset dari server: ",
                 event.request.url
             );
             return fetch(event.request);
